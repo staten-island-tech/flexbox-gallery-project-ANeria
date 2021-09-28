@@ -1,0 +1,29 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.header {
+  font-size: 3vw;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#logo {
+  width: 30vw;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+  padding: 3vw;
+}
+
+img {
+  width: 25vw;
+}
