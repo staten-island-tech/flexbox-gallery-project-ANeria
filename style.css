@@ -3,20 +3,24 @@ body,
 * {
   padding: 0;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
 }
 
 body {
   font-size: 8rem;
 }
 
+img {
+  width: 25vw;
+}
+
 .header {
   font-size: 28rem;
   font-weight: 500;
-  margin: 80px;
+  margin: 8rem;
 }
 
 #logo {
@@ -29,15 +33,18 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 30px 30vw;
-  padding: 200rem, 5rem;
-  padding-top: 30px;
+  margin: 3vw 4vw;
+  padding: 20rem, 5rem;
+  padding-top: 3rem;
   text-align: center;
   border-radius: 35px;
   background-color: rgb(101, 149, 28);
   color: antiquewhite;
 }
 
-img {
-  width: 25vw;
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: spac;
+  margin: 0 auto;
 }
