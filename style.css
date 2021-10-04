@@ -11,6 +11,9 @@ body,
 
 img {
   width: 20vw;
+  height: 16vw;
+  overflow: hidden;
+  object-fit: cover;
   margin-bottom: 0.75rem;
   border-radius: 20px;
 }
@@ -47,6 +50,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
