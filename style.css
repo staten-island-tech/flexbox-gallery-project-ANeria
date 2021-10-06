@@ -9,6 +9,14 @@ body,
   font-weight: 300;
 }
 
+h2 {
+  font-size: 1.8vw;
+}
+
+h3 {
+  font-size: 1vw;
+}
+
 img {
   width: 20vw;
   height: 16vw;
@@ -16,6 +24,7 @@ img {
   object-fit: cover;
   margin-bottom: 0.75rem;
   border-radius: 20px;
+  transition: all 0.5s;
 }
 
 .header {
@@ -23,6 +32,13 @@ img {
   flex-direction: row;
   font-size: 15vw;
   font-weight: 500;
+  animation: shake 5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    top: 30%;
+  }
 }
 
 #name {
@@ -39,33 +55,24 @@ img {
   margin-left: 4.2vw;
   margin-right: 4.2vw;
   padding: 2rem;
-  text-align: center;
   border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgb(228, 228, 202);
   color: rgb(101, 149, 28);
   box-shadow: 1.2rem 1.2rem 0.2rem 0.1rem rgb(112, 165, 32);
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 1.8vw;
-}
-
-h3 {
-  font-size: 1vw;
+  transition: all 0.5s;
 }
 
 .menu:hover {
   transform: scale(1.2);
 }
 
-.menu {
-  transition: all 0.5s;
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
 }
