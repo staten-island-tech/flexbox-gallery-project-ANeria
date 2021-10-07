@@ -32,12 +32,46 @@ img {
   flex-direction: row;
   font-size: 15vw;
   font-weight: 500;
+  position: relative;
+}
+
+.header:hover {
   animation: shake 5s infinite;
 }
 
 @keyframes shake {
   0% {
-    top: 30%;
+    top: 0%;
+  }
+  2% {
+    top: 7%;
+  }
+  5% {
+    top: 0%;
+  }
+  7% {
+    top: 7%;
+  }
+  10% {
+    top: 0%;
+  }
+  15% {
+    top: 5%;
+  }
+  20% {
+    top: 0%;
+  }
+  25% {
+    top: 5%;
+  }
+  30% {
+    top: 0%;
+  }
+  37% {
+    top: 3%;
+  }
+  44% {
+    top: 0%;
   }
 }
 
@@ -75,4 +109,9 @@ img {
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
+}
+
+#load-burger {
+  width: 1.5vw;
+  //:https://www.youtube.com/watch?v=wRIHB0sByB0
 }
