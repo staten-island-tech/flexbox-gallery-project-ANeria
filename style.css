@@ -105,12 +105,23 @@ img {
   margin: 0 auto;
 }
 
-.load {
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
-  width: 30vw;
   justify-content: center;
+  align-items: center;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
 }
 
 #load-element {
@@ -120,17 +131,23 @@ img {
 }
 
 #load-burger1 {
-  animation: wave 1s 0.1s infinite;
+  animation: bounce 1s 0.1s infinite ease;
 }
 #load-burger2 {
-  animation: wave 1s 0.2s infinite;
+  animation: bounce 1s 0.2s infinite ease;
 }
 #load-burger3 {
-  animation: wave 1s 0.3s infinite;
+  animation: bounce 1s 0.3s infinite ease;
 }
 
-@keyframes wave {
+@keyframes bounce {
   75% {
-    transform: translate(0, 1.5rem);
+    transform: translateY(5rem);
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
