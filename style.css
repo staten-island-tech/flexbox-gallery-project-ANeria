@@ -17,7 +17,7 @@ h3 {
   font-size: 1vw;
 }
 
-img {
+.menu-item {
   width: 20vw;
   height: 16vw;
   overflow: hidden;
