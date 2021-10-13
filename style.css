@@ -191,9 +191,12 @@ h3 {
     font-size: 20vw;
   }
 
+  #name {
+  }
+
   #logo {
     width: 40vw;
-    margin-right: -5rem;
+    margin-right: -8rem;
     margin-left: -5rem;
   }
 
