@@ -137,6 +137,25 @@ h3 {
   animation: bounce 1s 0.3s infinite ease;
 }
 
+.rando-animations {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+#rando-images {
+  width: 15vw;
+  height: auto;
+  padding: 1vw;
+}
+
+#berries-and-cream {
+  animation: box 5s infinite;
+}
+
+@keyframes box {
+}
+
 @keyframes bounce {
   75% {
     transform: translateY(5rem);
@@ -191,9 +210,6 @@ h3 {
     font-size: 20vw;
   }
 
-  #name {
-  }
-
   #logo {
     width: 40vw;
     margin-right: -8rem;
@@ -223,7 +239,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1005px) FIX THIS U HOE {
+@media screen and (max-width: 1005px) {
   .header {
     font-size: 20vw;
   }
