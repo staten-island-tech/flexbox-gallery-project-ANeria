@@ -139,21 +139,82 @@ h3 {
 
 .rando-animations {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding-bottom: 15vw;
+  padding-top: 15vw;
 }
 
 #rando-images {
-  width: 15vw;
+  width: 20vw;
   height: auto;
-  padding: 1vw;
+  padding: 5vw;
+}
+
+#guy-fieri {
+  position: absolute;
+  left: 50%;
+}
+
+#guy-fieri:hover {
+  animation: cubic 2s cubic-bezier(0.17, 0.67, 0.85, 0.53) infinite;
+}
+
+@keyframes cubic {
+  0% {
+    top: 0%;
+    left: 50%;
+  }
+  25% {
+    top: 20%;
+    left: 50%;
+  }
+  50% {
+    top: 20%;
+    left: 55%;
+  }
+  75% {
+    top: 0%;
+    left: 55%;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+  }
 }
 
 #berries-and-cream {
-  animation: box 5s infinite;
+  position: absolute;
+  left: 10%;
+}
+
+#berries-and-cream:hover {
+  animation: box 5s infinite ease;
 }
 
 @keyframes box {
+  0% {
+    top: 0%;
+    left: 10%;
+  }
+  25% {
+    top: 20%;
+    left: 10%;
+  }
+  50% {
+    top: 20%;
+    left: 15%;
+  }
+  75% {
+    top: 0%;
+    left: 15%;
+  }
+  100% {
+    top: 0%;
+    left: 10%;
+  }
 }
 
 @keyframes bounce {
