@@ -212,11 +212,45 @@ h3 {
   }
 }
 
+#mike-wazowski {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  padding: 3vw;
+}
+
+#mike-wazowski:hover {
+  animation: bounce-travel 5s infinite linear alternate;
+}
+
+@keyframes bounce-travel {
+  0% {
+    transform: translateY(0rem);
+    left: 10%;
+  }
+  25% {
+    transform: translateY(5rem);
+    left: 15%;
+  }
+  50% {
+    transform: translateY(0rem);
+    left: 20%;
+  }
+  75% {
+    transform: translateY(5rem);
+    left: 25%;
+  }
+  100% {
+    transform: translateY(0rem);
+    left: 30%;
+  }
+}
 @keyframes bounce {
   75% {
     transform: translateY(5rem);
   }
 }
+
 @keyframes fadeOut {
   100% {
     opacity: 0;
