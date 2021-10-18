@@ -95,12 +95,13 @@ h3 {
   flex-direction: column;
   background-color: rgb(228, 228, 202);
   color: rgb(101, 149, 28);
-  box-shadow: 1.2rem 1.2rem 0.2rem 0.1rem rgb(112, 165, 32);
+  box-shadow: 1.2rem 1.2rem 0.2rem 0.05rem rgb(112, 165, 32);
   transition: all 0.5s;
 }
 
 .menu:hover {
   transform: scale(1.2);
+  box-shadow: 0.8rem 1.4rem 0.1rem 0.05rem rgb(112, 165, 32);
 }
 
 .row {
