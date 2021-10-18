@@ -46,27 +46,35 @@ h3 {
   }
   2% {
     top: 5%;
+    transform: rotateZ(8deg);
   }
   5% {
     top: 0%;
+    transform: rotateZ(-6deg);
   }
   9% {
     top: 4%;
+    transform: rotateZ(6deg);
   }
   14% {
     top: 0%;
+    transform: rotateZ(-4deg);
   }
   20% {
     top: 3%;
+    transform: rotateZ(4deg);
   }
   26% {
     top: 0%;
+    transform: rotateZ(-2deg);
   }
   34% {
     top: 2%;
+    transform: rotateZ(2deg);
   }
   43% {
     top: 0%;
+    transform: rotateZ(-1deg);
   }
 }
 
@@ -159,29 +167,15 @@ h3 {
 }
 
 #guy-fieri:hover {
-  animation: cubic 2s cubic-bezier(0.17, 0.67, 0.85, 0.53) infinite;
+  animation: rotate 5s infinite linear;
 }
 
-@keyframes cubic {
+@keyframes rotate {
   0% {
-    top: 0%;
     left: 50%;
-  }
-  25% {
-    top: 20%;
-    left: 50%;
-  }
-  50% {
-    top: 20%;
-    left: 55%;
-  }
-  75% {
-    top: 0%;
-    left: 55%;
   }
   100% {
-    top: 0%;
-    left: 50%;
+    transform: rotateZ(360deg);
   }
 }
 
