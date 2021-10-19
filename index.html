@@ -89,6 +89,18 @@
 
     </section>
 
+    <div class="loader">
+        <div id="load-burger1">
+            <img id="load-element" src="http://www.wyattresearch.com/wp-content/uploads/2015/01/th.jpg" alt="load-burger">
+        </div>
+        <div id="load-burger2" >
+            <img id="load-element" src="http://www.wyattresearch.com/wp-content/uploads/2015/01/th.jpg" alt="load-burger">
+        </div>
+        <div id="load-burger3">
+            <img id="load-element" src="http://www.wyattresearch.com/wp-content/uploads/2015/01/th.jpg" alt="load-burger">
+        </div>
+    </div>
+
 <div class="rando-animations">
     <div id="berries-and-cream">
         <img id="rando-images" src="https://www.adweek.com/wp-content/uploads/2021/09/little-lad-berries-cream-2021-1360x680.jpg" alt="berries-and-cream">
@@ -103,5 +115,13 @@
 
 
 </body>
+
+<script type="text/javascript">
+    window.addEventListener("load", function (){
+        const loader = document.querySelector(".loader");
+        console.log(loader);
+        loader.className += " hidden";
+    });
+</script>
 
 </html>
