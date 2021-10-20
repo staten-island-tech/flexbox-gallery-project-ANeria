@@ -17,6 +17,11 @@ h3 {
   font-size: 1vw;
 }
 
+#menu-label:hover,
+#menu-descriptions:hover {
+  animation: hop 5s;
+}
+
 .menu-item {
   width: 20vw;
   height: 16vw;
@@ -24,7 +29,7 @@ h3 {
   object-fit: cover;
   margin-bottom: 0.75rem;
   border-radius: 20px;
-  transition: all 0.5s;
+  transition: all 2s;
 }
 
 .header {
@@ -77,6 +82,35 @@ h3 {
     transform: rotateZ(-1deg);
   }
 }
+@keyframes hop {
+  0% {
+    transform: translateY(0rem);
+  }
+  2% {
+    transform: translateY(1rem);
+  }
+  5% {
+    transform: translateY(0rem);
+  }
+  9% {
+    transform: translateY(0.75rem);
+  }
+  14% {
+    transform: translateY(0rem);
+  }
+  20% {
+    transform: translateY(0.5rem);
+  }
+  26% {
+    transform: translateY(0rem);
+  }
+  34% {
+    transform: translateY(0.25rem);
+  }
+  43% {
+    transform: translateY(0rem);
+  }
+}
 
 #logo {
   width: 30vw;
@@ -109,41 +143,6 @@ h3 {
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
-}
-
-.loader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader.hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}
-
-#load-element {
-  width: 4.5vw;
-  padding: 1vw;
-  height: auto;
-}
-
-#load-burger1 {
-  animation: bounce 1s 0.1s infinite ease;
-}
-#load-burger2 {
-  animation: bounce 1s 0.2s infinite ease;
-}
-#load-burger3 {
-  animation: bounce 1s 0.3s infinite ease;
 }
 
 .rando-animations {
