@@ -22,6 +22,36 @@ h3 {
   animation: hop 5s;
 }
 
+@keyframes hop {
+  0% {
+    transform: translateY(0rem);
+  }
+  2% {
+    transform: translateY(1rem);
+  }
+  5% {
+    transform: translateY(0rem);
+  }
+  9% {
+    transform: translateY(0.75rem);
+  }
+  14% {
+    transform: translateY(0rem);
+  }
+  20% {
+    transform: translateY(0.5rem);
+  }
+  26% {
+    transform: translateY(0rem);
+  }
+  34% {
+    transform: translateY(0.25rem);
+  }
+  43% {
+    transform: translateY(0rem);
+  }
+}
+
 .menu-item {
   width: 20vw;
   height: 16vw;
@@ -80,35 +110,6 @@ h3 {
   43% {
     top: 0%;
     transform: rotateZ(-1deg);
-  }
-}
-@keyframes hop {
-  0% {
-    transform: translateY(0rem);
-  }
-  2% {
-    transform: translateY(1rem);
-  }
-  5% {
-    transform: translateY(0rem);
-  }
-  9% {
-    transform: translateY(0.75rem);
-  }
-  14% {
-    transform: translateY(0rem);
-  }
-  20% {
-    transform: translateY(0.5rem);
-  }
-  26% {
-    transform: translateY(0rem);
-  }
-  34% {
-    transform: translateY(0.25rem);
-  }
-  43% {
-    transform: translateY(0rem);
   }
 }
 
