@@ -62,7 +62,7 @@ h3 {
   transition: all 2s;
 }
 
-.header {
+header {
   display: flex;
   flex-direction: row;
   font-size: 15vw;
@@ -71,7 +71,7 @@ h3 {
   position: relative;
 }
 
-.header:hover {
+header:hover {
   animation: shake 5s infinite;
 }
 
